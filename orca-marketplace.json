@@ -3,11 +3,11 @@
   "owner": "ab2webco",
   "plugins": [
     {
-      "id": "ab2web.wa-inbox",
+      "id": "ab2web.orca-wa-inbox",
       "source": {
         "kind": "git",
         "url": "https://github.com/ab2webco/orca-wa-inbox.git",
-        "ref": "v3.0.1"
+        "ref": "v3.2.0"
       },
       "description": "Bandeja de soporte de WhatsApp: mapea cada conversacion a un proyecto, define hasta donde puede actuar el agente en cada una, y abre las tarjetas por contenido del mensaje. Lee la base local de WhatsApp Desktop; no sale a internet.",
       "categories": [
