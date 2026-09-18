@@ -6,26 +6,17 @@ Es la fuente que la aplicacion carga por defecto.
 
 ## Que hay aca
 
-| Plugin | Que hace | En la lista |
-| --- | --- | --- |
-| [`ab2web.orca-wa-inbox`](https://github.com/ab2webco/orca-wa-inbox) | Bandeja de soporte de WhatsApp. Mapea conversaciones a proyectos, define hasta donde puede actuar el agente en cada una, y abre tarjetas segun el contenido del mensaje. Lee la base local de WhatsApp Desktop y no sale a internet. | si |
-| `stablyai.orca-portuguese` | Traducciones al portugues de Brasil. | si |
-| `stablyai.orca-multipass-recipes` | Ciclo de vida para espacios de trabajo Multipass desechables. | si |
-| `stablyai.orca-navigation-shortcuts` | Alias de comandos y atajos para vistas frecuentes. | si |
-| `stablyai.orca-midnight-theme` | Tema oscuro. | no |
-| `stablyai.orca-nord-theme` | Tema claro de bajo contraste. | no |
-| `stablyai.orca-minimal-icons` | Tema de iconos monocromo. | no |
-| `stablyai.orca-solarized-terminal` | Colores Solarized Dark para la terminal. | no |
-| `stablyai.orca-workflow-skills` | Skills para planear, revisar y entregar trabajo. | no |
+| Plugin | Que hace |
+| --- | --- |
+| [`ab2web.orca-wa-inbox`](https://github.com/ab2webco/orca-wa-inbox) | Bandeja de soporte de WhatsApp. Mapea conversaciones a proyectos, define hasta donde puede actuar el agente en cada una, y abre tarjetas segun el contenido del mensaje. Lee la base local de WhatsApp Desktop y no sale a internet. |
 
-**Los cinco que dicen "no" estan publicados y Orca los esconde.** No es un problema
-de este indice: Orca oculta de la lista cualquier entrada cuyas categorias sean
-`themes`, `icons`, `icon-themes`, `terminal-themes` o `skills`, porque el
-instalador todavia rechaza esos paquetes y un boton de instalar que falla es peor
-que no mostrarlo. Se veran cuando el instalador los soporte, sin tocar este repo.
+Solo plugins de Ab2Web. Se probo copiar aca las entradas del indice de upstream
+y se revirtio: la tarjeta del marketplace muestra como autor al **owner del
+indice**, no al publisher del plugin, asi que sus plugins aparecian firmados por
+`ab2webco`. Atribuir el trabajo de otro no se arregla con un pie de nota.
 
-Las entradas de `stablyai.*` apuntan a los repos de ellos: se lista su catalogo,
-no se copia su codigo.
+Sus plugins siguen disponibles desde su propia fuente, que se agrega igual que
+esta.
 
 ## Sobre el sello "Oficial"
 
