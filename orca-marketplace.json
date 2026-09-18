@@ -1,13 +1,109 @@
 {
-  "name": "Ab2Web Plugins",
+  "name": "Ab2Web Orca Lab Plugins",
   "owner": "ab2webco",
   "plugins": [
     {
-      "id": "ab2web.wa-inbox",
+      "id": "stablyai.orca-midnight-theme",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/stablyai/orca-midnight-theme.git",
+        "ref": "v1.0.0"
+      },
+      "description": "A quiet dark theme tuned for long coding sessions.",
+      "categories": [
+        "themes"
+      ]
+    },
+    {
+      "id": "stablyai.orca-workflow-skills",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/stablyai/orca-workflow-skills.git",
+        "ref": "v1.0.0"
+      },
+      "description": "Practical skills for planning, reviewing, and handing off repository work.",
+      "categories": [
+        "skills"
+      ]
+    },
+    {
+      "id": "stablyai.orca-nord-theme",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/stablyai/orca-nord-theme.git",
+        "ref": "v1.0.0"
+      },
+      "description": "A cool, low-contrast application theme inspired by arctic colors.",
+      "categories": [
+        "themes"
+      ]
+    },
+    {
+      "id": "stablyai.orca-portuguese",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/stablyai/orca-portuguese.git",
+        "ref": "v1.0.0"
+      },
+      "description": "Brazilian Portuguese translations for common Orca navigation.",
+      "categories": [
+        "languages"
+      ]
+    },
+    {
+      "id": "stablyai.orca-minimal-icons",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/stablyai/orca-minimal-icons.git",
+        "ref": "v1.0.0"
+      },
+      "description": "A compact monochrome icon theme for common source files.",
+      "categories": [
+        "icons"
+      ]
+    },
+    {
+      "id": "stablyai.orca-solarized-terminal",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/stablyai/orca-solarized-terminal.git",
+        "ref": "v1.0.0"
+      },
+      "description": "Solarized Dark terminal colors packaged for Orca.",
+      "categories": [
+        "terminal-themes"
+      ]
+    },
+    {
+      "id": "stablyai.orca-multipass-recipes",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/stablyai/orca-multipass-recipes.git",
+        "ref": "v1.0.0"
+      },
+      "description": "A reviewed starter lifecycle for disposable Multipass workspaces.",
+      "categories": [
+        "vm-recipes"
+      ]
+    },
+    {
+      "id": "stablyai.orca-navigation-shortcuts",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/stablyai/orca-navigation-shortcuts.git",
+        "ref": "v1.0.0"
+      },
+      "description": "Command aliases and optional shortcuts for frequent Orca views.",
+      "categories": [
+        "keybindings"
+      ]
+    },
+    {
+      "id": "ab2web.orca-wa-inbox",
       "source": {
         "kind": "git",
         "url": "https://github.com/ab2webco/orca-wa-inbox.git",
-        "ref": "v3.0.1"
+        "ref": "v3.1.0"
       },
       "description": "Bandeja de soporte de WhatsApp: mapea cada conversacion a un proyecto, define hasta donde puede actuar el agente en cada una, y abre las tarjetas por contenido del mensaje. Lee la base local de WhatsApp Desktop; no sale a internet.",
       "categories": [
