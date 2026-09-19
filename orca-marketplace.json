@@ -7,7 +7,7 @@
       "source": {
         "kind": "git",
         "url": "https://github.com/ab2webco/orca-wa-inbox.git",
-        "ref": "v3.12.1"
+        "ref": "v3.12.2"
       },
       "description": "Bandeja de soporte de WhatsApp: mapea cada conversacion a un proyecto, define hasta donde puede actuar el agente en cada una, y abre las tarjetas por contenido del mensaje. Lee de dos vias que se suman: la base local de WhatsApp Desktop en macOS, y una sesion de WhatsApp Web en una pestana del navegador de Orca — esta segunda anda en los tres sistemas y sirve para un segundo numero. No sale a internet por su cuenta; usa el CLI de Orca para manejar esa pestana.",
       "categories": [
