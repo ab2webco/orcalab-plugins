@@ -21,7 +21,7 @@
       "source": {
         "kind": "git",
         "url": "https://github.com/ab2webco/orca-jev-advisor.git",
-        "ref": "v0.2.6"
+        "ref": "v0.3.0"
       },
       "description": "Judges what your agents are about to run, before they run it, and stays out of the way otherwise: npm test and rm -rf node_modules pass without a word, while gh pr merge, terraform apply and git push --force stop and ask. The judgement comes from Jev (TypeSafe) in a few hundred milliseconds rather than a large model reasoning about your shell, and a set of local rules catches force pushes, recursive deletes from / or $HOME, dropped tables and curl | bash in about a millisecond with no network and no API key at all. How strict it is depends on where you are: the destination catalog is built from the worktrees Orca already knows about, so a client's repository is judged more carefully than your own tooling. Verified on macOS; Windows and Linux are implemented but untested.",
       "categories": [
