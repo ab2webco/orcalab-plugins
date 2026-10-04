@@ -1,0 +1,42 @@
+name: Follow releases
+
+# Orca never refreshes a catalog by itself, and whoever presses Refresh gets
+# exactly what orca-marketplace.json pins. A release the catalog does not
+# point at reaches nobody: Jev Advisor stayed pinned at v0.6.10 through
+# fifteen releases. This moves every git-sourced pin forward to the newest
+# stable vX.Y.Z tag of its repository, hourly and on demand.
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: follow-releases
+  cancel-in-progress: false
+
+jobs:
+  follow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Test
+        run: node --test scripts/
+      - name: Move pins forward
+        if: github.event_name != 'pull_request'
+        run: |
+          node scripts/follow-releases.mjs | tee moved.txt
+          if git diff --quiet -- orca-marketplace.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -q -m "chore(catalog): follow releases ($(paste -sd ',' moved.txt | sed 's/,/, /g'))" -- orca-marketplace.json
+          git push origin HEAD:main

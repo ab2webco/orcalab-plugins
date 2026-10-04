@@ -53,6 +53,22 @@ cambian.
    instalacion falla. Para que un plugin de Ab2Web pueda ser oficial, su id
    necesita el prefijo `orca-`: `ab2web.orca-<algo>`.
 
+## Las versiones nuevas llegan solas al indice
+
+Orca no refresca un indice por su cuenta: quien pulsa Refresh recibe lo que
+`orca-marketplace.json` fija, y una version que el indice no apunta no le llega
+a nadie. Jev Advisor se quedo en `v0.6.10` durante quince versiones por eso.
+
+El workflow `Follow releases` corre cada hora (y a mano desde Actions). Mueve
+cada `ref` hacia la etiqueta `vX.Y.Z` estable mas nueva de su repo y hace el
+commit en `main`. Solo hacia adelante: no toca una pre-release (`v1.0.0-rc.1`),
+ni una `ref` que sea una rama o un commit, ni baja nunca una version. Etiquetar
+una version en el repo del plugin basta; el PR al indice ya no hace falta.
+
+```sh
+node scripts/follow-releases.mjs --check   # sale con 1 si alguna ref esta atrasada
+```
+
 ## Agregar esta fuente a mano
 
 Solo hace falta en una version de Orca que todavia no la traiga por defecto.
