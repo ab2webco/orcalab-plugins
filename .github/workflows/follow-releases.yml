@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 24
       - name: Test
-        run: node --test scripts/
+        run: node --test scripts/*.test.mjs
       - name: Move pins forward
         if: github.event_name != 'pull_request'
         run: |
