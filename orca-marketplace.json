@@ -21,7 +21,7 @@
       "source": {
         "kind": "git",
         "url": "https://github.com/ab2webco/orca-jev-advisor.git",
-        "ref": "v0.6.26"
+        "ref": "v0.6.27"
       },
       "description": "Since 0.6.0 it also shows where your Claude usage goes, per model and per account, and can pick the model and effort each piece of work needs: a cheap model for simple work, a strong one for hard work, and never below your session's own model in a client's repository, on sensitive or failing work, or when Jev is unsure. It starts by only measuring; switching models is opt-in per account. Judges what your agents are about to run, before they run it, and stays out of the way otherwise: npm test, rm -rf node_modules and a push of your own branch pass without a word. When Jev (TypeSafe) sees risk, it advises the agent directly, naming what would be affected and a safe alternative, so you are not interrupted; only a team policy you set to require a person ever asks you. The judgement takes a few hundred milliseconds rather than a large model reasoning about your shell, and a set of local rules stops force pushes, recursive deletes from / or $HOME, dropped tables and curl | bash in about a millisecond with no network and no API key at all. How strict it is depends on where you are: the destination catalog is built from the worktrees Orca already knows about, so a client's repository is judged more carefully than your own tooling. Verified on macOS; Windows and Linux are implemented but untested.",
       "categories": [
