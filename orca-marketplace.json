@@ -29,6 +29,20 @@
         "automation",
         "agents"
       ]
+    },
+    {
+      "id": "ab2web.orca-sonar",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/ab2webco/orca-sonar.git",
+        "ref": "v0.1.0"
+      },
+      "description": "Fast file and symbol lookup for agents. It indexes a workspace into a SQLite full-text index kept in Orca's data folder, never inside the repository, and leaves git status untouched. Agents run index, find <words> and symbol <name>, with --json for machine-readable output. Works in git worktrees and plain folders; requires Node.js 24 or newer on PATH.",
+      "categories": [
+        "search",
+        "agents",
+        "developer-tools"
+      ]
     }
   ]
 }
