@@ -35,7 +35,7 @@
       "source": {
         "kind": "git",
         "url": "https://github.com/ab2webco/orca-sonar.git",
-        "ref": "v0.2.1"
+        "ref": "v0.2.2"
       },
       "description": "Fast file and symbol lookup for agents. It indexes each workspace into a SQLite full-text index kept in Orca's data folder, never inside the repository, and leaves git status untouched. Agents run status, index, find <words> and symbol <name>, with --json for machine-readable output, and the bundled skill tells them when to use it instead of grep. Settings has switches to turn Sonar off for agents or skip the background warm-up, plus every local workspace's index; a usage panel shows queries per day and the estimated saving versus grep. Works in git worktrees and plain folders; requires Node.js 24 or newer on PATH.",
       "categories": [
