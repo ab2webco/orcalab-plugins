@@ -43,6 +43,19 @@
         "agents",
         "developer-tools"
       ]
+    },
+    {
+      "id": "ab2web.orca-mailbox",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/ab2webco/orca-mailbox.git",
+        "ref": "v0.1.0"
+      },
+      "description": "Brings the headers of your mail into Orca, one account at a time, so you can see what takes space before cleaning up. IMAP over TLS today (cPanel, Zoho, iCloud, Yahoo, Gmail with an app password); Google and Microsoft sign-in come next. Read-only in this version, and built so that deleting can only ever move mail to Trash, never remove it for good.",
+      "categories": [
+        "messaging",
+        "productivity"
+      ]
     }
   ]
 }
